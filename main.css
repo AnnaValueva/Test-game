@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: #EAF0CE;
+}
+
+.test {
+  position: relative;
+  padding: 2rem 2rem calc(2rem + 70px);
+  width: 600px;
+  max-width: 95vw;
+  overflow: hidden;
+
+  background-color: #F0E3E8;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px rgba(63, 51, 77, .2);
+}
+
+.title {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.summary {
+  text-align: center;
+  margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.result {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.test-list {
+  padding: 0;
+}
+
+.test-list li {
+  font-size: 1.2rem;
+}
+
+.test-list label {
+  display: block;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.test-list label:hover {
+  background-color: #7D8491;
+}
+
+.test-list label.correct {
+  color: rgb(53, 255, 105);
+}
+
+.test-list label.disabled {
+  cursor: no-drop;
+}
+
+.test-list label.disabled:hover {
+  cursor: no-drop;
+  background-color: transparent;
+}
+
+.test-list label.wrong {
+  font-weight: bold;
+  color: rgb(255, 62, 65);
+}
+
+.test-list input[type='radio'] {
+  margin-right: 10px;
+}
+
+.test-submit {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  line-height: 70px;
+}
+
+.submit {
+  display: block;
+  border: none;
+  width: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: inherit;
+
+  background-color: #BAA6BB;
+  color: #FFF;
+}
+
+.submit:hover {
+  background-color: #F1B5CB;
+}
+
+.submit:focus {
+  outline: none;
+
+  background-color: #BD8197;
+}
+
+.submit.next {
+  background: #000;
+}
+
+.submit.next:hover {
+  background-color: #222;
+}
+
+.submit.next:focus {
+  outline: none;
+  background-color: #444;
+}
